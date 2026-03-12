@@ -1,0 +1,10 @@
+AGENTS.md
+
+*.exe
+*.db
+
+*.csv
+!template.csv
+
+*.json
+!twikoo.json
