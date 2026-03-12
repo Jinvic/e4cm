@@ -14,12 +14,13 @@ func main() {
 	flag.StringVar(&csvPath, "csv", "", "csv file path")
 	flag.StringVar(&jsonPath, "json", "", "json file path")
 	flag.StringVar(&dbPath, "db", "", "db file path")
+	
+	flag.Parse()
 
 	if csvPath == "" || jsonPath == "" || dbPath == "" {
 		flag.PrintDefaults()
 		return
 	}
 
-	flag.Parse()
 	service.Migrate(csvPath, jsonPath, dbPath)
 }
