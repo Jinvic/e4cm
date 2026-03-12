@@ -12,16 +12,16 @@
 
 ```bash
 # linux
-e4cm -c template.csv -j twikoo.json -d ech0.db
+e4cm -csv template.csv -json twikoo.json -db ech0.db
 
 # windows
-e4cm.exe -c template.csv -j twikoo.json -d ech0.db
+e4cm.exe -csv template.csv -json twikoo.json -db ech0.db
 ```
 
 ## 参数说明
 
 |参数|必填|说明|
 |---|---|
-|`-c`|是|旧id与新id的对照表文件|
-|`-j`|是|twikoo的评论数据文件|
-|`-d`|是|v4数据库文件|
+|`-csv`|是|旧id与新id的对照表文件|
+|`-json`|是|twikoo的评论数据文件|
+|`-db`|是|v4数据库文件|
