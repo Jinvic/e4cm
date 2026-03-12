@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-func hashClientIP(ip string) string {
+func HashClientIP(ip string) string {
 	if strings.TrimSpace(ip) == "" {
 		return ""
 	}
