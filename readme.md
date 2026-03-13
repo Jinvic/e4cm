@@ -12,10 +12,17 @@
 
 ```bash
 # linux
-e4cm -csv template.csv -json twikoo.json -db ech0.db
+curl -L -o e4cm https://github.com/Jinvic/e4cm/releases/latest/download/e4cm-linux-amd64
+chmod +x e4cm
+./e4cm -csv template.csv -json twikoo.json -db ech0.db
+sha256sum e4cm # 校验文件完整性
+```
 
+```pwsh
 # windows
+curl.exe -L -o e4cm.exe https://github.com/Jinvic/e4cm/releases/latest/download/e4cm-windows-amd64.exe
 e4cm.exe -csv template.csv -json twikoo.json -db ech0.db
+Get-FileHash e4cm.exe -Algorithm SHA256 # 校验文件完整性
 ```
 
 ## 参数说明
